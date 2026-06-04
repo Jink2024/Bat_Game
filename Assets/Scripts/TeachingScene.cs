@@ -16,6 +16,7 @@ public class TeachingScene : MonoBehaviour
     public void OnClickShowDiet()
     {
         UI.ShowDiet();
+        UI.HideTeachingButtons();
         
         // some Diet achievement here
         // but only the first time?
@@ -24,11 +25,13 @@ public class TeachingScene : MonoBehaviour
     public void OnClickHideDiet()
     {
         UI.HideDiet();
+        UI.ShowTeachingButtons();
     }
     
     public void OnClickShowHabitat()
     {
         UI.ShowHabitat();
+        UI.HideTeachingButtons();
         
         // some Diet achievement here
         // but only the first time?
@@ -37,6 +40,7 @@ public class TeachingScene : MonoBehaviour
     public void OnClickHideHabitat()
     {
         UI.HideHabitat();
+        UI.ShowTeachingButtons();
     }
     
     // Update is called once per frame
