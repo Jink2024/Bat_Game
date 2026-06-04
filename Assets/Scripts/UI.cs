@@ -7,6 +7,7 @@ public class UI : MonoBehaviour
     //public GameTimer GameTimer;
     public CanvasGroup TeachingButtonsCanvasGroup;
     public CanvasGroup DietCanvasGroup;
+    public CanvasGroup HabitatCanvasGroup;
     
     
    /* public void SetScoreText(int score)
@@ -39,5 +40,14 @@ public class UI : MonoBehaviour
        CanvasGroupDisplayer.Show(DietCanvasGroup);
    }
    
+   public void HideHabitat()
+   {
+       CanvasGroupDisplayer.Hide(HabitatCanvasGroup);
+   }
+
+   public void ShowHabitat()
+   {
+       CanvasGroupDisplayer.Show(HabitatCanvasGroup);
+   }
     
 }
