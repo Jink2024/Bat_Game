@@ -1,0 +1,21 @@
+using UnityEngine;
+
+public class InsectGameProjectile : MonoBehaviour
+{
+    
+    private Rigidbody2D projectileRigidbody;
+    
+    protected virtual void Awake()
+    {
+        projectileRigidbody = GetComponent<Rigidbody2D>();
+    }
+    
+    protected virtual void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("SlotTrigger"))
+        {
+            Destroy(gameObject);
+            return;
+        }
+    }
+}
