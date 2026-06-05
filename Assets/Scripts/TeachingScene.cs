@@ -11,6 +11,7 @@ public class TeachingScene : MonoBehaviour
         // hide the diet canvas screen at the start of the game
         UI.HideDiet();
         UI.HideHabitat();
+        UI.HideFacts();
     }
 
     public void OnClickShowDiet()
@@ -40,6 +41,21 @@ public class TeachingScene : MonoBehaviour
     public void OnClickHideHabitat()
     {
         UI.HideHabitat();
+        UI.ShowTeachingButtons();
+    }
+    
+    public void OnClickShowFacts()
+    {
+        UI.ShowFacts();
+        UI.HideTeachingButtons();
+        
+        // some Diet achievement here
+        // but only the first time?
+    }
+
+    public void OnClickHideFacts()
+    {
+        UI.HideFacts();
         UI.ShowTeachingButtons();
     }
     
