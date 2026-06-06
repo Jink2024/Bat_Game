@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Bat
   - RestingPosition
+  - SlotTrigger
+  - Insect
   layers:
   - Default
   - TransparentFX

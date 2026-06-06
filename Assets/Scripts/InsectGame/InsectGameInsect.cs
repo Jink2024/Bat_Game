@@ -124,4 +124,6 @@ public class InsectGameInsect : MonoBehaviour
         newRestingPosition = GetRandomRestingPositionLocation();
         MoveTowardsRestingPosition();
     }
+    
+    
 }

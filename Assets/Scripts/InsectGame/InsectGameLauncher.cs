@@ -16,6 +16,6 @@ public class InsectGameLauncher : MonoBehaviour
     {
         Rigidbody2D projectileRigidbody = projectileObject.GetComponent<Rigidbody2D>();
         
-        projectileRigidbody.AddForce(aimDirection * 5f, ForceMode2D.Impulse);
+        projectileRigidbody.AddForce(aimDirection * 8f, ForceMode2D.Impulse);
     }
 }

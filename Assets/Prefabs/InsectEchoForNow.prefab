@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -6063054427923714961}
   - component: {fileID: -3926108840557504102}
   m_Layer: 0
-  m_Name: BulletForNow
+  m_Name: InsectEchoForNow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 5329e3eee62044ddab9d9b6853093483, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d0d0dd573056c469688489f2d0692242, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
