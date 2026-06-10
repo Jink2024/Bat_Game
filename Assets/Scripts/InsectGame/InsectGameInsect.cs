@@ -10,6 +10,8 @@ public class InsectGameInsect : MonoBehaviour
     private Coroutine restingCountdownCoroutine;
     private const float ArrivalDistance = 0.1f;
    
+    public InsectGameInsectEcho InsectGameInsectEcho;
+   
     private SpriteRenderer spriteRenderer;
     private bool isLeaving = false;
     protected virtual float MovementSpeed => InsectGameGameParameters.InsectMovementSpeed;
@@ -18,6 +20,8 @@ public class InsectGameInsect : MonoBehaviour
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         StartCoroutine(RemainOnScreenCountdown());
+        
+        MoveTowardsRestingPosition();
     }
 
     public virtual void OnTriggerEnter2D(Collider2D collision)
@@ -25,6 +29,15 @@ public class InsectGameInsect : MonoBehaviour
         if (collision.gameObject.CompareTag("SlotTrigger"))
         {
             Destroy(gameObject);
+        }
+        
+        if (collision.gameObject.CompareTag("BatEcho"))
+        {
+            print ("hit insect");
+            InsectGameInsectEcho.FireAtBat();
+            return;
+
+            // make insect shoot wave at bat
         }
     }
 
@@ -71,13 +84,9 @@ public class InsectGameInsect : MonoBehaviour
     
     private void CheckArrival()
     {
-        if (newRestingPosition == null) return;
+        //if (newRestingPosition == null) return;
 
-        float distance =
-            Vector2.Distance(
-                transform.position,
-                newRestingPosition.position
-            );
+        float distance = Vector2.Distance(transform.position, newRestingPosition.position);
 
         if (distance < ArrivalDistance)
         {
@@ -124,6 +133,5 @@ public class InsectGameInsect : MonoBehaviour
         newRestingPosition = GetRandomRestingPositionLocation();
         MoveTowardsRestingPosition();
     }
-    
     
 }

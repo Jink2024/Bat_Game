@@ -110,9 +110,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InsectGameInsect
   RestingPositions:
-  - {fileID: 5050672501335661971, guid: 29deed9d3c93c4bb0bb403597baf8179, type: 3}
-  - {fileID: 2495718980705168608, guid: 25b3270a08fd94c419ad5290a25e881e, type: 3}
-  - {fileID: 161084997552184462, guid: 3444c4a54a1624fad8c459b0a7183439, type: 3}
+  - {fileID: 7404762772993426721, guid: 59036232621014e399bf0ad4bb9cb5d7, type: 3}
+  InsectGameInsectEcho: {fileID: 7918611020479091863}
 --- !u!50 &-7316475940297072520
 Rigidbody2D:
   serializedVersion: 5
@@ -123,11 +122,11 @@ Rigidbody2D:
   m_GameObject: {fileID: 4394235448035082115}
   m_BodyType: 0
   m_Simulated: 1
-  m_UseFullKinematicContacts: 0
+  m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_AngularDamping: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -203,7 +202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ced7e8da68a24ccbbfd2913e38df351, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InsectGameLauncher
-  ProjectilePrefab: {fileID: 3539100312752567951, guid: a60d45f80173949538f94bfe255ef3c7, type: 3}
+  ProjectilePrefab: {fileID: 3539100312752567951, guid: 4b867f726fbdf435e96dece57206fe6a, type: 3}
   ProjectileSpawnPoint: {fileID: 7391950413502762834}
 --- !u!1 &8357874637625637675
 GameObject:

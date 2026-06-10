@@ -8,6 +8,7 @@ TagManager:
   - RestingPosition
   - SlotTrigger
   - Insect
+  - BatEcho
   layers:
   - Default
   - TransparentFX

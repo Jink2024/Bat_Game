@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5303765208190559913}
   - component: {fileID: -6063054427923714961}
   - component: {fileID: -3926108840557504102}
+  - component: {fileID: 6124635633998598554}
   m_Layer: 0
   m_Name: InsectEchoForNow
   m_TagString: Untagged
@@ -108,7 +109,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 0.8
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -156,3 +157,15 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 2.56
+--- !u!114 &6124635633998598554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3539100312752567951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4ec1e7b3237342108fd21663d7a9390, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InsectGameProjectile

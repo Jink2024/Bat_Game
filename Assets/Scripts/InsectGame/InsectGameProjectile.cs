@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class InsectGameProjectile : MonoBehaviour
 {
-    public InsectGameInsectEcho InsectGameInsectEcho;
     private InsectGameLauncher insectGameLauncher;
     private Rigidbody2D projectileRigidbody;
     
@@ -20,13 +19,6 @@ public class InsectGameProjectile : MonoBehaviour
             return;
         }
 
-        if (other.CompareTag("Insect"))
-        {
-            print ("hit insect");
-            InsectGameInsectEcho.FireAtBat();
-            return;
-
-            // make insect shoot wave at bat
-        }
+      
     }
 }
