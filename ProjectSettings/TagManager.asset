@@ -9,6 +9,7 @@ TagManager:
   - SlotTrigger
   - Insect
   - BatEcho
+  - InsectEcho
   layers:
   - Default
   - TransparentFX

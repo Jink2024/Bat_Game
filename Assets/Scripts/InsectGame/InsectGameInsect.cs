@@ -23,21 +23,37 @@ public class InsectGameInsect : MonoBehaviour
         
         MoveTowardsRestingPosition();
     }
-
-    public virtual void OnTriggerEnter2D(Collider2D collision)
+    
+    public void Update()
     {
-        if (collision.gameObject.CompareTag("SlotTrigger"))
+        //Move(Vector2.left);
+        if (isMoving)
+        {
+            //Move();
+            //MoveTowardsRestingPosition();
+            //CheckArrival();
+        }
+    }
+
+    public virtual void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("SlotTrigger"))
         {
             Destroy(gameObject);
         }
         
-        if (collision.gameObject.CompareTag("BatEcho"))
+        if (other.CompareTag("BatEcho"))
         {
-            print ("hit insect");
+            print ("hit insect with bat echo");
             InsectGameInsectEcho.FireAtBat();
             return;
 
             // make insect shoot wave at bat
+        }
+
+        if (other.CompareTag("InsectEcho"))
+        {
+            print ("hit with insect echo");
         }
     }
 
@@ -53,7 +69,7 @@ public class InsectGameInsect : MonoBehaviour
         FaceCorrectDirection(direction);
         Vector2 movementAmount = MovementSpeed * InsectGameGameParameters.InsectMovementSpeed * direction * Time.deltaTime;
         spriteRenderer.transform.Translate(movementAmount.x, movementAmount.y, 0);
-        AddScreenConstraints();
+        //AddScreenConstraints();
     }
 
     public virtual void AddScreenConstraints()
@@ -73,14 +89,6 @@ public class InsectGameInsect : MonoBehaviour
         }
     }
     
-    public void Update()
-    {
-        if (isMoving)
-        {
-            MoveTowardsRestingPosition();
-            CheckArrival();
-        }
-    }
     
     private void CheckArrival()
     {

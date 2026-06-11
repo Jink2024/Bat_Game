@@ -169,4 +169,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4ec1e7b3237342108fd21663d7a9390, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InsectGameProjectile
-  InsectGameInsectEcho: {fileID: 7918611020479091863, guid: 7a8a240c58d87487a8b175736b41e906, type: 3}

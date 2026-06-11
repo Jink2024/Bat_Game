@@ -747,36 +747,28 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -7316475940297072520, guid: 7a8a240c58d87487a8b175736b41e906, type: 3}
-      propertyPath: m_Mass
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -7316475940297072520, guid: 7a8a240c58d87487a8b175736b41e906, type: 3}
-      propertyPath: m_GravityScale
-      value: 0
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -7316475940297072520, guid: 7a8a240c58d87487a8b175736b41e906, type: 3}
       propertyPath: m_AngularDamping
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: -7316475940297072520, guid: 7a8a240c58d87487a8b175736b41e906, type: 3}
-      propertyPath: m_UseFullKinematicContacts
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3878393204065665827, guid: 7a8a240c58d87487a8b175736b41e906, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4394235448035082115, guid: 7a8a240c58d87487a8b175736b41e906, type: 3}
       propertyPath: m_Name
       value: InsectForNow
       objectReference: {fileID: 0}
+    - target: {fileID: 5235008737861628460, guid: 7a8a240c58d87487a8b175736b41e906, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7391950413502762834, guid: 7a8a240c58d87487a8b175736b41e906, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.81
+      value: 1.63
       objectReference: {fileID: 0}
     - target: {fileID: 7391950413502762834, guid: 7a8a240c58d87487a8b175736b41e906, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.18
+      value: -0.584
       objectReference: {fileID: 0}
     - target: {fileID: 7391950413502762834, guid: 7a8a240c58d87487a8b175736b41e906, type: 3}
       propertyPath: m_LocalPosition.z
@@ -809,6 +801,10 @@ PrefabInstance:
     - target: {fileID: 7391950413502762834, guid: 7a8a240c58d87487a8b175736b41e906, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.909
+      objectReference: {fileID: 0}
+    - target: {fileID: 7551211353328645241, guid: 7a8a240c58d87487a8b175736b41e906, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -845,10 +841,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InsectGameInsectSpawner
   Prefab: {fileID: 4394235448035082115, guid: 7a8a240c58d87487a8b175736b41e906, type: 3}
-  minimumSecondsToWait: 5
-  maximumSecondsToWait: 10
+  minimumSecondsToWait: 2
+  maximumSecondsToWait: 5
   isOkToCreate: 1
-  isActive: 1
+  isActive: 0
 --- !u!4 &1502247470
 Transform:
   m_ObjectHideFlags: 0
@@ -1392,11 +1388,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 573576972373245789, guid: 0715b8e09ab094cb28aa21f2d91b6eb4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.46
+      value: -7.13
       objectReference: {fileID: 0}
     - target: {fileID: 573576972373245789, guid: 0715b8e09ab094cb28aa21f2d91b6eb4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.48
+      value: 6.68
       objectReference: {fileID: 0}
     - target: {fileID: 573576972373245789, guid: 0715b8e09ab094cb28aa21f2d91b6eb4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1436,11 +1432,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7715653266389015460, guid: 0715b8e09ab094cb28aa21f2d91b6eb4, type: 3}
       propertyPath: m_Size.y
-      value: 15.407736
+      value: 17.622437
       objectReference: {fileID: 0}
     - target: {fileID: 7715653266389015460, guid: 0715b8e09ab094cb28aa21f2d91b6eb4, type: 3}
       propertyPath: m_Offset.y
-      value: -3.574747
+      value: -4.0957375
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1522,11 +1518,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8152384959730311875, guid: e4daeb7ef40c04ab9bbc15ded5b5dbd1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.14
+      value: 14.16
       objectReference: {fileID: 0}
     - target: {fileID: 8152384959730311875, guid: e4daeb7ef40c04ab9bbc15ded5b5dbd1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.48
+      value: 6.62
       objectReference: {fileID: 0}
     - target: {fileID: 8152384959730311875, guid: e4daeb7ef40c04ab9bbc15ded5b5dbd1, type: 3}
       propertyPath: m_LocalPosition.z
