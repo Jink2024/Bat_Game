@@ -1482,7 +1482,7 @@ GameObject:
   - component: {fileID: 1544282886}
   - component: {fileID: 1544282885}
   m_Layer: 5
-  m_Name: Customize Character
+  m_Name: EcholocationGameButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1559,7 +1559,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1750,7 +1750,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Customize Character
+  m_text: 'Echolocation Game
 
 '
   m_isRightToLeft: 0

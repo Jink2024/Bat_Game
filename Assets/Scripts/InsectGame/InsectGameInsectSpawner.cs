@@ -42,7 +42,7 @@ public class InsectGameInsectSpawner : MonoBehaviour
         CleanupPlacerObjects();
     }
 
-    private void CleanupPlacerObjects()
+    public void CleanupPlacerObjects()
     {
         List<GameObject> placedObjects = GameObject.FindGameObjectsWithTag(Prefab.tag).ToList();
         for (int i = 0; i < placedObjects.Count; i++)

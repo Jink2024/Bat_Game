@@ -111,6 +111,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InsectGameInsect
   RestingPositions:
   - {fileID: 7404762772993426721, guid: 59036232621014e399bf0ad4bb9cb5d7, type: 3}
+  spriteRenderer: {fileID: 4976657221051199270}
+  InsectGameUI: {fileID: 0}
   InsectGameInsectEcho: {fileID: 7918611020479091863}
 --- !u!50 &-7316475940297072520
 Rigidbody2D:

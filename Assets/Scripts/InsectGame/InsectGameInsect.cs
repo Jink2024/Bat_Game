@@ -9,13 +9,14 @@ public class InsectGameInsect : MonoBehaviour
     private Transform newRestingPosition;
     private Coroutine restingCountdownCoroutine;
     private const float ArrivalDistance = 0.1f;
-   
-    public InsectGameInsectEcho InsectGameInsectEcho;
-   
-    public SpriteRenderer spriteRenderer;
     private bool isLeaving = false;
     protected virtual float MovementSpeed => InsectGameGameParameters.InsectMovementSpeed;
 
+    
+    public SpriteRenderer spriteRenderer;
+    private InsectGameUI InsectGameUI;
+    public InsectGameInsectEcho InsectGameInsectEcho; 
+    
     public void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -42,9 +43,11 @@ public class InsectGameInsect : MonoBehaviour
             // make game say: You found an insect
             
             //wait a few seconds then destroy insect?
-            var direction = Vector2.left;
-            Move(direction);
-            // make insect shoot wave at bat
+            
+            Destroy(gameObject, 3f);
+
+            InsectGameUI.score = InsectGameUI.score + 1;
+
         }
 
         if (other.CompareTag("InsectEcho"))

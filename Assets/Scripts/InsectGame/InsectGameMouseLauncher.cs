@@ -6,9 +6,10 @@ using UnityEngine;
 public class InsectGameMouseLauncher : MonoBehaviour
 {
    public InsectGameLauncher InsectGameLauncher;
+   public InsectGameGame InsectGameGame;
    void Update()
    {
-      if (Mouse.current.leftButton.wasPressedThisFrame)
+      if (Mouse.current.leftButton.wasPressedThisFrame && InsectGameGame.isPlaying)
       {
          Launch();
       }

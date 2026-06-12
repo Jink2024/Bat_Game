@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: 02421da667e4249789b2c2cab8518839
+guid: 7b68f8b6ed68441d2b26c43c560cb11f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2631103260818236658
-    second: Beetle_0
-  - first:
-      213: 7801186258100458736
-    second: Beetle_1
-  - first:
-      213: -3665364186405681620
-    second: Beetle_2
-  - first:
-      213: -7567055186130341114
-    second: Beetle_3
+      213: 5335457623382700057
+    second: OIP-1266771318_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -58,10 +49,10 @@ TextureImporter:
   spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 9
-  spritePivot: {x: 0.263322, y: 0.22789115}
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 7, y: 7, z: 36, w: 41}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -109,89 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Beetle_0
+      name: OIP-1266771318_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 39
-        width: 18
-        height: 18
+        x: 0
+        y: 0
+        width: 474
+        height: 395
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2f4617cb97e838420800000000000000
-      internalID: 2631103260818236658
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Beetle_1
-      rect:
-        serializedVersion: 2
-        x: 36
-        y: 39
-        width: 21
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0f49cbcb191634c60800000000000000
-      internalID: 7801186258100458736
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Beetle_2
-      rect:
-        serializedVersion: 2
-        x: 7
-        y: 7
-        width: 21
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c26c9d041b2022dc0800000000000000
-      internalID: -3665364186405681620
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Beetle_3
-      rect:
-        serializedVersion: 2
-        x: 38
-        y: 9
-        width: 20
-        height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6037ce2766b6cf690800000000000000
-      internalID: -7567055186130341114
+      spriteID: 91030e3a07a5b0a40800000000000000
+      internalID: 5335457623382700057
       vertices: []
       indices: 
       edges: []
@@ -201,7 +126,7 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    internalID: 0
     vertices: []
     indices: 
     edges: []
@@ -210,10 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Beetle_0: 2631103260818236658
-      Beetle_1: 7801186258100458736
-      Beetle_2: -3665364186405681620
-      Beetle_3: -7567055186130341114
+      OIP-1266771318_0: 5335457623382700057
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

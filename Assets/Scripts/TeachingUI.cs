@@ -1,26 +1,18 @@
+using TMPro;
 using UnityEngine;
 
 public class UI : MonoBehaviour
 {
-    //public TMP_Text scoreText;
+    
     //public TMP_Text TimeText;
     //public GameTimer GameTimer;
     public CanvasGroup TeachingButtonsCanvasGroup;
     public CanvasGroup DietCanvasGroup;
     public CanvasGroup HabitatCanvasGroup;
     public CanvasGroup FactsCanvasGroup;
-    
-    
-   /* public void SetScoreText(int score)
-    {
-        scoreText.text = "Score: " + score;
-    }
-
-    public void ResetScore()
-    {
-        scoreText.text = "Score: 0";
-    }
-    */
+    public CanvasGroup TeachingOverButtonsCanvasGroup;
+   
+   
    public void HideTeachingButtons()
    {
        CanvasGroupDisplayer.Hide(TeachingButtonsCanvasGroup);
@@ -29,6 +21,16 @@ public class UI : MonoBehaviour
    public void ShowTeachingButtons()
    {
        CanvasGroupDisplayer.Show(TeachingButtonsCanvasGroup);
+   }
+   
+   public void HideTeachingOverButtons()
+   {
+       CanvasGroupDisplayer.Hide(TeachingOverButtonsCanvasGroup);
+   }
+
+   public void ShowTeachingOverButtons()
+   {
+       CanvasGroupDisplayer.Show(TeachingOverButtonsCanvasGroup);
    }
    
    public void HideDiet()
