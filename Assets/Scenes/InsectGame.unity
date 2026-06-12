@@ -747,8 +747,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -7316475940297072520, guid: 7a8a240c58d87487a8b175736b41e906, type: 3}
+      propertyPath: m_Mass
+      value: 0.0001
+      objectReference: {fileID: 0}
+    - target: {fileID: -7316475940297072520, guid: 7a8a240c58d87487a8b175736b41e906, type: 3}
       propertyPath: m_Constraints
-      value: 4
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: -7316475940297072520, guid: 7a8a240c58d87487a8b175736b41e906, type: 3}
       propertyPath: m_AngularDamping
@@ -760,7 +764,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5235008737861628460, guid: 7a8a240c58d87487a8b175736b41e906, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7391950413502762834, guid: 7a8a240c58d87487a8b175736b41e906, type: 3}
       propertyPath: m_LocalPosition.x

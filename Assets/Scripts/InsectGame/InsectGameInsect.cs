@@ -12,7 +12,7 @@ public class InsectGameInsect : MonoBehaviour
    
     public InsectGameInsectEcho InsectGameInsectEcho;
    
-    private SpriteRenderer spriteRenderer;
+    public SpriteRenderer spriteRenderer;
     private bool isLeaving = false;
     protected virtual float MovementSpeed => InsectGameGameParameters.InsectMovementSpeed;
 
@@ -21,18 +21,11 @@ public class InsectGameInsect : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         StartCoroutine(RemainOnScreenCountdown());
         
-        MoveTowardsRestingPosition();
     }
     
     public void Update()
     {
         //Move(Vector2.left);
-        if (isMoving)
-        {
-            //Move();
-            //MoveTowardsRestingPosition();
-            //CheckArrival();
-        }
     }
 
     public virtual void OnTriggerEnter2D(Collider2D other)
@@ -44,18 +37,22 @@ public class InsectGameInsect : MonoBehaviour
         
         if (other.CompareTag("BatEcho"))
         {
-            print ("hit insect with bat echo");
             InsectGameInsectEcho.FireAtBat();
-            return;
-
+            print("BatEcho");
+            // make game say: You found an insect
+            
+            //wait a few seconds then destroy insect?
+            var direction = Vector2.left;
+            Move(direction);
             // make insect shoot wave at bat
         }
 
         if (other.CompareTag("InsectEcho"))
         {
-            print ("hit with insect echo");
+            return;
         }
     }
+    
 
     public IEnumerator RemainOnScreenCountdown()
     {
@@ -66,7 +63,7 @@ public class InsectGameInsect : MonoBehaviour
     public void Move(Vector2 direction)
     {
         if (isLeaving) direction.y = 1;
-        FaceCorrectDirection(direction);
+        //FaceCorrectDirection(direction);
         Vector2 movementAmount = MovementSpeed * InsectGameGameParameters.InsectMovementSpeed * direction * Time.deltaTime;
         spriteRenderer.transform.Translate(movementAmount.x, movementAmount.y, 0);
         //AddScreenConstraints();
@@ -89,7 +86,7 @@ public class InsectGameInsect : MonoBehaviour
         }
     }
     
-    
+    /*
     private void CheckArrival()
     {
         //if (newRestingPosition == null) return;
@@ -105,7 +102,6 @@ public class InsectGameInsect : MonoBehaviour
                 StartCoroutine(RestingCountdown());
         }
     }
-
     
     private void MoveTowardsRestingPosition()
     {
@@ -141,5 +137,5 @@ public class InsectGameInsect : MonoBehaviour
         newRestingPosition = GetRandomRestingPositionLocation();
         MoveTowardsRestingPosition();
     }
-    
+    */
 }

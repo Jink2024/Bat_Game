@@ -14,6 +14,7 @@ public class InsectGameInsectEcho : MonoBehaviour
     {
         //launcher = GetComponentInParent<Launcher>();
         bat = FindAnyObjectByType<GameObject>();
+        // bat = GameObject.Find("Bat");
         //game = FindAnyObjectByType<Game>();
         spawnTime = Time.time;
     }

@@ -15,7 +15,6 @@ public class InsectGameProjectile : MonoBehaviour
         if (other.CompareTag("SlotTrigger"))
         {
             Destroy(gameObject);
-            print("hit slot trigger");
             return;
         }
 
