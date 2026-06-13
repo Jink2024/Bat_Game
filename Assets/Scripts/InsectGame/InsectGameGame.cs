@@ -4,15 +4,15 @@ public class InsectGameGame : MonoBehaviour
 {
     public InsectGameInsectSpawner InsectGameInsectSpawner;
     public InsectGameUI InsectGameUI;
+    
     public static bool isPlaying = false;
-    int score;
+    public static int score;
     void Start()
     {
-        //reset counter
         InsectGameUI.ShowInsectStartScreen();
         InsectGameUI.HideInsectGameOverScreen();
         InsectGameUI.ResetScore();
-        InsectGameUI.SetScoreText(score);
+        InsectGameUI.SetScoreText();
     }
 
     public void OnClickHideInsectStartScreen()
@@ -38,6 +38,9 @@ public class InsectGameGame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //GameOver();
+        GameOver();
+        
+        InsectGameUI.SetScoreText();
+        //print(score);
     }
 }

@@ -12,16 +12,15 @@ public class InsectGameInsect : MonoBehaviour
     private bool isLeaving = false;
     protected virtual float MovementSpeed => InsectGameGameParameters.InsectMovementSpeed;
 
-    
+    InsectGameUI InsectGameUI;
     public SpriteRenderer spriteRenderer;
-    private InsectGameUI InsectGameUI;
-    public InsectGameInsectEcho InsectGameInsectEcho; 
+    public static int score;
+    public InsectGameInsectEcho InsectGameInsectEcho;
     
     public void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         StartCoroutine(RemainOnScreenCountdown());
-        
     }
     
     public void Update()
@@ -46,8 +45,7 @@ public class InsectGameInsect : MonoBehaviour
             
             Destroy(gameObject, 3f);
 
-            InsectGameUI.score = InsectGameUI.score + 1;
-
+            score = score + 1;
         }
 
         if (other.CompareTag("InsectEcho"))

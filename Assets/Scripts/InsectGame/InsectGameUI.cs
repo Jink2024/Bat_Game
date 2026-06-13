@@ -3,16 +3,18 @@ using UnityEngine;
 
 public class InsectGameUI : MonoBehaviour
 {
-    public TMP_Text scoreText;
     
     public CanvasGroup InsectGameOverScreenCanvasGroup;
     public CanvasGroup InsectStartScreenCanvasGroup;
+    public InsectGameInsect InsectGameInsect;
 
+    public TMP_Text scoreText;
     public static int score;
     
-    public void SetScoreText(int score)
+    public void SetScoreText()
     {
         scoreText.text = "Score: " + score;
+        print(score);
     }
 
     public void ResetScore()
