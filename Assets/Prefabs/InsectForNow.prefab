@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7918611020479091863}
   - component: {fileID: -7075295795245657697}
   - component: {fileID: 7551211353328645241}
+  - component: {fileID: 577835752845065821}
   m_Layer: 0
   m_Name: InsectForNow
   m_TagString: Insect
@@ -112,8 +113,8 @@ MonoBehaviour:
   RestingPositions:
   - {fileID: 7404762772993426721, guid: 59036232621014e399bf0ad4bb9cb5d7, type: 3}
   spriteRenderer: {fileID: 4976657221051199270}
-  InsectGameUI: {fileID: 0}
   InsectGameInsectEcho: {fileID: 7918611020479091863}
+  ReturnSprite: {fileID: 21300000, guid: 5329e3eee62044ddab9d9b6853093483, type: 3}
 --- !u!50 &-7316475940297072520
 Rigidbody2D:
   serializedVersion: 5
@@ -206,6 +207,26 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: -0.005074557, y: -0.00009180723}
   m_Radius: 0.015544041
+--- !u!114 &577835752845065821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4394235448035082115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a87151b95062bec4e8493b1ec9c31af5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BugHover
+  wanderRadius: 1.2
+  origin: {x: 0, y: 0}
+  driftSpeed: 1.8
+  noiseFrequency: 0.9
+  jitterAmount: 0.06
+  jitterFrequency: 4.5
+  bobAmplitude: 0.08
+  bobFrequency: 3.2
 --- !u!1 &8357874637625637675
 GameObject:
   m_ObjectHideFlags: 0

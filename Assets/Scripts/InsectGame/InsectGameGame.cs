@@ -1,3 +1,4 @@
+using DefaultNamespace;
 using UnityEngine;
 
 public class InsectGameGame : MonoBehaviour
@@ -6,7 +7,7 @@ public class InsectGameGame : MonoBehaviour
     public InsectGameUI InsectGameUI;
     
     public static bool isPlaying = false;
-    public static int score;
+
     void Start()
     {
         InsectGameUI.ShowInsectStartScreen();
@@ -24,7 +25,7 @@ public class InsectGameGame : MonoBehaviour
 
     public void GameOver()
     {
-        if (score == 5)
+        if (InsectGameScoreKeeper.GetScore() == 5)
         {
             InsectGameUI.ShowInsectGameOverScreen();
 

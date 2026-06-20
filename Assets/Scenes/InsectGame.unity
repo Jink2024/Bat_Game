@@ -1586,9 +1586,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d97de7a739e54d6fb66eb8a3ccfb361, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InsectGameUI
-  scoreText: {fileID: 1476603977}
   InsectGameOverScreenCanvasGroup: {fileID: 2044090817}
   InsectStartScreenCanvasGroup: {fileID: 1088651955}
+  InsectGameInsect: {fileID: 0}
+  scoreText: {fileID: 1476603977}
 --- !u!4 &994700617
 Transform:
   m_ObjectHideFlags: 0
@@ -2011,12 +2012,20 @@ PrefabInstance:
       value: 0.0001
       objectReference: {fileID: 0}
     - target: {fileID: -7316475940297072520, guid: 7a8a240c58d87487a8b175736b41e906, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7316475940297072520, guid: 7a8a240c58d87487a8b175736b41e906, type: 3}
       propertyPath: m_Constraints
-      value: 7
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -7316475940297072520, guid: 7a8a240c58d87487a8b175736b41e906, type: 3}
       propertyPath: m_AngularDamping
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7316475940297072520, guid: 7a8a240c58d87487a8b175736b41e906, type: 3}
+      propertyPath: m_UseFullKinematicContacts
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4394235448035082115, guid: 7a8a240c58d87487a8b175736b41e906, type: 3}
       propertyPath: m_Name

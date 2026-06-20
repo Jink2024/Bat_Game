@@ -169,3 +169,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4ec1e7b3237342108fd21663d7a9390, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InsectGameProjectile
+  EchoPrefab: {fileID: 5494181465423579221, guid: bfbfceb945b28a848bdc7da538940104, type: 3}
+  echoSpawnInterval: 1.5

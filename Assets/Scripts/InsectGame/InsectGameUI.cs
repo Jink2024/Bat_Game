@@ -1,3 +1,4 @@
+using DefaultNamespace;
 using TMPro;
 using UnityEngine;
 
@@ -9,17 +10,21 @@ public class InsectGameUI : MonoBehaviour
     public InsectGameInsect InsectGameInsect;
 
     public TMP_Text scoreText;
-    public static int score;
+
+    public void Update()
+    {
+        SetScoreText();
+    }
     
     public void SetScoreText()
     {
-        scoreText.text = "Score: " + score;
-        print(score);
+        scoreText.text = "Score: " + InsectGameScoreKeeper.GetScore();
     }
 
     public void ResetScore()
     {
-        scoreText.text = "Score: 0";
+        InsectGameScoreKeeper.ResetScore();
+        SetScoreText();
     }
     
     public void HideInsectGameOverScreen()

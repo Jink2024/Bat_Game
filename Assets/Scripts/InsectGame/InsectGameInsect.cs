@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using DefaultNamespace;
 
 public class InsectGameInsect : MonoBehaviour
 {
@@ -14,8 +15,8 @@ public class InsectGameInsect : MonoBehaviour
 
     InsectGameUI InsectGameUI;
     public SpriteRenderer spriteRenderer;
-    public static int score;
     public InsectGameInsectEcho InsectGameInsectEcho;
+    public Sprite ReturnSprite;
     
     public void Start()
     {
@@ -37,15 +38,18 @@ public class InsectGameInsect : MonoBehaviour
         
         if (other.CompareTag("BatEcho"))
         {
-            InsectGameInsectEcho.FireAtBat();
+            //InsectGameInsectEcho.FireAtBat();
             print("BatEcho");
             // make game say: You found an insect
             
             //wait a few seconds then destroy insect?
             
-            Destroy(gameObject, 3f);
+            Destroy(gameObject, 1f);
 
-            score = score + 1;
+            AddToScore();
+            LaunchReturnEcho(other.gameObject);
+            CircleCollider2D circleCollider2D = gameObject.GetComponent<CircleCollider2D>();
+            circleCollider2D.enabled = false;
         }
 
         if (other.CompareTag("InsectEcho"))
@@ -53,7 +57,23 @@ public class InsectGameInsect : MonoBehaviour
             return;
         }
     }
-    
+
+    private void AddToScore()
+    {
+        InsectGameScoreKeeper.AddToScore(1);
+    }
+
+    private void LaunchReturnEcho(GameObject echo)
+    {
+        Rigidbody2D projectileRigidbody = echo.GetComponent<Rigidbody2D>();
+        projectileRigidbody.linearVelocity = -projectileRigidbody.linearVelocity;
+        
+        echo.transform.rotation = Quaternion.Euler(0f, 0f, echo.transform.eulerAngles.z + 180f);
+        
+        SpriteRenderer spriteRenderer = echo.GetComponent<SpriteRenderer>();
+        spriteRenderer.sprite = ReturnSprite;
+    }
+
 
     public IEnumerator RemainOnScreenCountdown()
     {

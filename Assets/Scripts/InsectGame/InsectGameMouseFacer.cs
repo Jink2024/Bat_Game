@@ -7,18 +7,22 @@ public class InsectGameMouseFacer : MonoBehaviour
     void Update()
     {
         float angle = GetAngle();
-
+        print("Angle0: " + angle);
         angle = ConstrainAngle(angle);
-        
+        print("    Angle: " + angle);
         transform.rotation = Quaternion.Euler(0f, 0f, angle);
     }
 
     private float ConstrainAngle(float angle)
     {
-        if (angle > 75f)
-            angle = 75f;
+        // Remap from 0-360 into -180 to 180
+        if (angle > 180f)
+            angle -= 360f;
+        
         if (angle < -75f)
             angle = -75f;
+        else if (angle > 75f)
+            angle = 75f;
         
         return angle;
     }
