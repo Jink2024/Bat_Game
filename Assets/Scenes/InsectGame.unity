@@ -973,7 +973,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.10590956, g: 0.13809776, b: 0.18867922, a: 0}
+  m_BackGroundColor: {r: 0.81260663, g: 0.5740922, b: 0.9150943, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1586,10 +1586,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d97de7a739e54d6fb66eb8a3ccfb361, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InsectGameUI
+  scoreText: {fileID: 1476603977}
   InsectGameOverScreenCanvasGroup: {fileID: 2044090817}
   InsectStartScreenCanvasGroup: {fileID: 1088651955}
-  InsectGameInsect: {fileID: 0}
-  scoreText: {fileID: 1476603977}
+  InsectGameInsect: {fileID: 5235008737861628460, guid: 7a8a240c58d87487a8b175736b41e906, type: 3}
 --- !u!4 &994700617
 Transform:
   m_ObjectHideFlags: 0
