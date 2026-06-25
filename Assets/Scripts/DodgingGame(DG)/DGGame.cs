@@ -3,11 +3,12 @@ using UnityEngine;
 
 public class DGGame : MonoBehaviour
 {
-    public bool isGameRunning = true;
+    private bool isGameRunning = false;
     public DGUI DGUI;
     
     void Start()
     {
+        //isGameRunning = false;
         DGUI.ShowDGStartScreenCanvas();
         DGUI.HideDGGameOverCanvas();
     }
@@ -15,11 +16,15 @@ public class DGGame : MonoBehaviour
     public bool IsGameRunning()
     {
         print(isGameRunning + " so says Game");
-
         return isGameRunning;
     }
 
     public void OnStartButtonClicked()
+    {
+        StartGame();
+    }
+
+    public void StartGame()
     {
         DGUI.HideDGStartScreenCanvas();
         isGameRunning = true;

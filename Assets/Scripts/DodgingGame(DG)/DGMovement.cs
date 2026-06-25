@@ -43,16 +43,18 @@ public class DGMovement : MonoBehaviour
 
     void Update()
     {
+        /*
         if (!DGGame.IsGameRunning())
         {
             //print("Gamenotrunning");
             FreezeBat();
             return;
         }
+        */
 
         
             //print("Game Running");
-            UnFreezeBat();
+            //UnFreezeBat();
             Move(Vector2.right);
 
             if (Keyboard.current.spaceKey.wasPressedThisFrame)
@@ -77,10 +79,11 @@ public class DGMovement : MonoBehaviour
 
         if (other.CompareTag("SlotTrigger"))
         {
+            
             // game over
-            //DGGame.GameOver();
+            DGGame.GameOver();
             print("hit wall");
-            StopMoving();
+            // should prolly stop bat movement?
         }
     }
 
@@ -96,9 +99,5 @@ public class DGMovement : MonoBehaviour
         //spriteRenderer.transform.position = SpriteTools.ConstrainToScreen(spriteRenderer);
     }
     
-    public void StopMoving()
-    {
-        return;
-    }
     
 }
