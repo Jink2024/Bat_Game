@@ -20,22 +20,22 @@ public class DGMovement : MonoBehaviour
         rb = BatGameObject.GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         
-        //OriginalrbConstraints = rb.constraints;
+        OriginalrbConstraints = rb.constraints;
         //rbConstraints = BatGameObject.GetComponent<RigidbodyConstraints2D>();
     }
 
     public void UnFreezeBat()
     {
         rb.gravityScale = 1;
-        rb.linearVelocity = rb.linearVelocity.normalized;
-        //rb.constraints = OriginalrbConstraints;
+        //rb.linearVelocity = rb.linearVelocity.normalized;
+        rb.constraints = OriginalrbConstraints;
     }
     
     public void FreezeBat()
     {
-        rb.gravityScale = 0;
-        rb.linearVelocity = Vector2.zero;
-        //rb.constraints = RigidbodyConstraints2D.FreezePositionY;
+        rb.gravityScale = 0f;
+        //rb.linearVelocity = Vector2.zero;
+        rb.constraints = RigidbodyConstraints2D.FreezePositionY;
     }
     void Start()
     {
@@ -47,12 +47,13 @@ public class DGMovement : MonoBehaviour
         if (!DGGame.IsGameRunning())
         {
             print("Gamenotrunning");
-            //FreezeBat();
+            FreezeBat();
             return;
         }
         
             print("Game Running");
-            //UnFreezeBat();
+            
+            UnFreezeBat();
             Move(Vector2.right);
 
             if (Keyboard.current.spaceKey.wasPressedThisFrame)
