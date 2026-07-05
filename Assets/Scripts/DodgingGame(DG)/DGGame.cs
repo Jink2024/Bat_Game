@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class DGGame : MonoBehaviour
 {
-    private bool isGameRunning = false;
+    public bool isGameRunning = false;
     public DGUI DGUI;
     
     void Start()
@@ -15,13 +15,15 @@ public class DGGame : MonoBehaviour
     
     public bool IsGameRunning()
     {
-        print(isGameRunning + " so says Game");
+        isGameRunning = isGameRunning;
         return isGameRunning;
+        print(isGameRunning + " so says Game");
     }
 
     public void OnStartButtonClicked()
     {
         StartGame();
+        isGameRunning = true;
     }
 
     public void StartGame()
@@ -34,6 +36,13 @@ public class DGGame : MonoBehaviour
     {
         DGUI.ShowDGGameOverCanvas();
         //isGameRunning = false;
+    }
+
+    public void GameWon()
+    {
+        //DGUI.ShowDGGameWonCanvas();
+        isGameRunning = false;
+        
     }
     
     // Update is called once per frame

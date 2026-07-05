@@ -43,17 +43,15 @@ public class DGMovement : MonoBehaviour
 
     void Update()
     {
-        /*
+        
         if (!DGGame.IsGameRunning())
         {
-            //print("Gamenotrunning");
-            FreezeBat();
+            print("Gamenotrunning");
+            //FreezeBat();
             return;
         }
-        */
-
         
-            //print("Game Running");
+            print("Game Running");
             //UnFreezeBat();
             Move(Vector2.right);
 
@@ -62,8 +60,6 @@ public class DGMovement : MonoBehaviour
             {
                 Jump();
             }
-
-        
     }
 
     void Jump()
