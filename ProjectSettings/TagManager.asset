@@ -11,6 +11,7 @@ TagManager:
   - BatEcho
   - InsectEcho
   - Medal
+  - GameWon
   layers:
   - Default
   - TransparentFX

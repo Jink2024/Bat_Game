@@ -46,15 +46,13 @@ public class DGMovement : MonoBehaviour
         
         if (!DGGame.IsGameRunning())
         {
-            print("Gamenotrunning");
             FreezeBat();
             return;
         }
         
-            print("Game Running");
-            
-            UnFreezeBat();
-            Move(Vector2.right);
+        UnFreezeBat();
+        
+        Move(Vector2.right);
 
             if (Keyboard.current.spaceKey.wasPressedThisFrame)
                 //(Input.GetMouseButtonDown(0)) // Check for mouse click or tap.
@@ -79,8 +77,12 @@ public class DGMovement : MonoBehaviour
             
             // game over
             DGGame.GameOver();
-            print("hit wall");
             // should prolly stop bat movement?
+        }
+
+        if (other.CompareTag("GameWon"))
+        {
+            DGGame.GameWon();
         }
     }
 

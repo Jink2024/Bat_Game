@@ -114,7 +114,7 @@ MonoBehaviour:
   - {fileID: 7404762772993426721, guid: 59036232621014e399bf0ad4bb9cb5d7, type: 3}
   spriteRenderer: {fileID: 4976657221051199270}
   InsectGameInsectEcho: {fileID: 7918611020479091863}
-  ReturnSprite: {fileID: 21300000, guid: 5329e3eee62044ddab9d9b6853093483, type: 3}
+  ReturnSprite: {fileID: 21300000, guid: 93f09f7c3f92a4e99a1dd07437f87efd, type: 3}
 --- !u!50 &-7316475940297072520
 Rigidbody2D:
   serializedVersion: 5

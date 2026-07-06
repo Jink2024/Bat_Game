@@ -9,6 +9,7 @@ public class DGGame : MonoBehaviour
     void Start()
     {
         //isGameRunning = false;
+        DGUI.HideDGGameWonCanvas();
         DGUI.ShowDGStartScreenCanvas();
         DGUI.HideDGGameOverCanvas();
     }
@@ -17,7 +18,6 @@ public class DGGame : MonoBehaviour
     {
         isGameRunning = isGameRunning;
         return isGameRunning;
-        print(isGameRunning + " so says Game");
     }
 
     public void OnStartButtonClicked()
@@ -35,14 +35,13 @@ public class DGGame : MonoBehaviour
     public void GameOver()
     {
         DGUI.ShowDGGameOverCanvas();
-        //isGameRunning = false;
+        isGameRunning = false;
     }
 
     public void GameWon()
     {
-        //DGUI.ShowDGGameWonCanvas();
+        DGUI.ShowDGGameWonCanvas();
         isGameRunning = false;
-        
     }
     
     // Update is called once per frame
