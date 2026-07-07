@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 258f7fc0ac3fd410e99ddd59086379d4
+guid: 07c51dc605ea542fd9af714c45e63c6d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4905138680358436287
-    second: New Piskel(6)_0
+      213: -8911715223298307227
+    second: Bat Draft One(2)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: New Piskel(6)_0
+      name: Bat Draft One(2)_0
       rect:
         serializedVersion: 2
-        x: 21
-        y: 38
-        width: 58
-        height: 29
+        x: 16
+        y: 240
+        width: 184
+        height: 125
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1420537db527debb0800000000000000
-      internalID: -4905138680358436287
+      spriteID: 56b0ddf783a335480800000000000000
+      internalID: -8911715223298307227
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      New Piskel(6)_0: -4905138680358436287
+      Bat Draft One(2)_0: -8911715223298307227
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

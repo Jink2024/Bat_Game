@@ -36,7 +36,10 @@ public class TeachingScene : MonoBehaviour
         UI.HideDiet();
         UI.ShowTeachingButtons();
         
-        Instantiate(DietMedal);
+        
+        Instantiate(DietMedal, new Vector3(-6.5f, 2.3f, 0), Quaternion.identity);
+        DietMedal.transform.position = new Vector3(-6.5f, 2.3f, 0);
+        DietMedal.transform.localScale = new Vector3(6, 6, 1);
         hasDietMedal = true;
     }
     
@@ -51,7 +54,9 @@ public class TeachingScene : MonoBehaviour
         UI.HideHabitat();
         UI.ShowTeachingButtons();
         
-        Instantiate(HabitatMedal);
+        Instantiate(HabitatMedal, new Vector3(-6.5f, .3f, 0), Quaternion.identity);
+        HabitatMedal.transform.position = new Vector3(-6.5f, .3f, 0);
+        HabitatMedal.transform.localScale = new Vector3(6, 6, 1);
         hasHabitatMedal = true;
     }
     
@@ -66,7 +71,9 @@ public class TeachingScene : MonoBehaviour
         UI.HideFacts();
         UI.ShowTeachingButtons();
         
-        Instantiate(BatExpertMedal);
+        Instantiate(BatExpertMedal, new Vector3(-6.5f, -1.7f, 0), Quaternion.identity);
+        BatExpertMedal.transform.position = new Vector3(-6.5f, -1.7f, 0);
+        BatExpertMedal.transform.localScale = new Vector3(6, 6, 1);
         hasBatExpertMedal = true;
     }
 
