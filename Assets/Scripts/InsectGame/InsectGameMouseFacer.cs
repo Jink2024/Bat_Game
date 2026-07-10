@@ -3,14 +3,14 @@ using UnityEngine.InputSystem;
 
 public class InsectGameMouseFacer : MonoBehaviour
 {
-
+    public GameObject ExitPoint;
     void Update()
     {
         float angle = GetAngle();
-        print("Angle0: " + angle);
+        //print("Angle0: " + angle);
         angle = ConstrainAngle(angle);
-        print("    Angle: " + angle);
-        transform.rotation = Quaternion.Euler(0f, 0f, angle);
+        //print("    Angle: " + angle);
+        ExitPoint.transform.rotation = Quaternion.Euler(0f, 0f, angle);
     }
 
     private float ConstrainAngle(float angle)
