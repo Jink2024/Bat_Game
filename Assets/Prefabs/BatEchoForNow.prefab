@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -6063054427923714961}
   - component: {fileID: -3926108840557504102}
   - component: {fileID: 3827972080900995051}
+  - component: {fileID: 1605985710542119667}
   m_Layer: 0
   m_Name: BatEchoForNow
   m_TagString: BatEcho
@@ -169,5 +170,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4ec1e7b3237342108fd21663d7a9390, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InsectGameProjectile
-  EchoPrefab: {fileID: 5494181465423579221, guid: bfbfceb945b28a848bdc7da538940104, type: 3}
+  EchoPrefab: {fileID: 3539100312752567951}
   echoSpawnInterval: 1.5
+--- !u!114 &1605985710542119667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3539100312752567951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3a439248f80c424f853efc5245803ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InsectGameEchoTrail
+  fadeDuration: 0.5

@@ -15,7 +15,7 @@ public class InsectGameLauncher : MonoBehaviour
     private void LaunchProjectile(GameObject projectileObject, Vector2 aimDirection)
     {
         Rigidbody2D projectileRigidbody = projectileObject.GetComponent<Rigidbody2D>();
-        projectileRigidbody.AddForce(aimDirection * 20f, ForceMode2D.Impulse);
+        projectileRigidbody.AddForce(aimDirection * 10f, ForceMode2D.Impulse);
         
         float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
         projectileObject.transform.rotation = Quaternion.Euler(0f, 0f, angle);
