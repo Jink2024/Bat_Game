@@ -1,7 +1,5 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.WSA;
-using UnityEngine;
 
 public class InsectGameMouseLauncher : MonoBehaviour
 {
