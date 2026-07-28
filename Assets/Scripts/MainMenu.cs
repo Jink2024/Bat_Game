@@ -3,6 +3,19 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public Music Music;
+    void Start()
+    {
+        if (Music.WantMusic)
+        {
+            Music.PlayBackgroundMusic();
+        }
+       
+        if (!Music.WantMusic)
+        { 
+            Music.StopBackgroundMusic();
+        }
+    }
     public void OnClickLoadScene(int sceneIndex)
     {
         //Make sure the sceneIndex is less than or equal to the scene count in the 
